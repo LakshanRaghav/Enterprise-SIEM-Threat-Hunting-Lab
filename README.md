@@ -31,7 +31,7 @@ This project demonstrates the engineering, configuration, and structural validat
 
 ## 📊 Real-Time Visual Evidence & Telemetry Spikes
 
-![Wazuh Threat Hunting Dashboard Spike](https://githubusercontent.com)
+![Wazuh Threat Hunting Dashboard Spike](https://raw.githubusercontent.com/LakshanRaghav/Enterprise-SIEM-Threat-Hunting-Lab/refs/heads/main/Architectural-Blueprints/Screenshot_31-7-2026_21447_192.168.1.14.jpeg)
 
 * **SIEM Operations Metrics:** Successfully ingested, parsed, and logged over **968 total processed security events** from the live workstation node.
 * **Adversarial Pattern Correlation:** Validated real-time analytical timeline spikes at the exact minute of attack execution, proving the SIEM's capability to map anomalies to MITRE ATT&CK codes **T1070 (Indicator Removal)** and **T1562 (Disable or Modify Tool)**.
