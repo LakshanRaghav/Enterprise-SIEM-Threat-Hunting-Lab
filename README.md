@@ -45,13 +45,15 @@ This project demonstrates the engineering, configuration, and structural validat
 * **Adversarial Pattern Correlation:** Validated real-time analytical timeline spikes at the exact minute of attack execution, proving the SIEM's capability to map anomalies to MITRE ATT&CK codes **T1070 (Indicator Removal)** and **T1562 (Disable or Modify Tool)**.
 
 ### Figure 1.2: Expanded Security Incident Volumetric Analysis Dashboard
-*(Insert your second dashboard screenshot showing 968 total alerts and 4 active authentication failures here)*
+![Wazuh Threat Hunting Dashboard Spike](https://raw.githubusercontent.com/LakshanRaghav/Enterprise-SIEM-Threat-Hunting-Lab/refs/heads/main/Architectural-Blueprints/Screenshot_1-8-2026_17232_.jpeg)
+
 * **Metric Column 1 (Total Volume):** Ingested, parsed, and logged over **968 total processed security events** across the live workstation node.
 * **Metric Column 2 (Timeline Spike):** Visualized an acute, towering event volume spike at the 21:00 mark, indicating successful multi-event rate correlation.
 * **Metric Column 3 (Adversarial Correlation):** Explicitly captured **4 active centralized authentication failures**, mapping anomalies to MITRE ATT&CK codes **T1070 (Indicator Removal)** and **T1562 (Disable or Modify Tool)**.
 
 ### Figure 1.3: Code Integrity & Cryptographic Audit Stream
-*(Insert your third real-time event stream screenshot here)*
+![Wazuh Threat Hunting Dashboard Spike](https://raw.githubusercontent.com/LakshanRaghav/Enterprise-SIEM-Threat-Hunting-Lab/refs/heads/main/Architectural-Blueprints/Screenshot_31-7-2026_194452_192.168.1.12.jpeg)
+
 * **Metric Column 1 (Total Hits):** Captured **58 specific log hits** registered across the high-frequency administrative process sweep.
 * **Metric Column 2 (Timeline Spike):** Recorded a sharp vertical timeline volume spike peaking above 35 counts at approximately 14:30.
 * **Metric Column 3 (Central Rule Triggered):** Documented consecutive chronological log entries for **Rule ID 18107 ("Windows Logon Success.")** mapping directly to administrative token validation.
@@ -60,6 +62,16 @@ Use code with caution.📂 Your Next Active Step to Increase Your GitHub Score:E
 ---
 
 ## 🧠 Engineering Observations & Lifecycle Troubleshooting
-* **Dynamic Network Adaptation:** Successfully resolved changing network environments and dynamic DHCP router shifts by manually re-mapping the endpoint's core file utility paths (`win32ui`) to ensure zero handshake downtime.
-* **Agent System Recovery:** Resolved structural file collisions by executing a clean factory-reset configuration profile via administrative PowerShell, restoring a pristine data sync loop.
-* **Log Channel Auditing:** Diagnosed an internal telemetry gap by identifying that specialized remote and local authentication protocols write to independent sub-directories, resolving system blindness by force-activating hidden logging rooms.
+
+* **Dynamic Network Adaptation (DHCP Gateway Desynchronisation):**
+  * **The Issue:** Shifting local network topologies and dynamic DHCP router lease renewals caused the host workstation and the SIEM server to lose connection routing states when IP targets cycled.
+  * **The Resolution:** Manually isolated the local endpoint's core runtime libraries and parsed the configuration files (`win32ui`) to re-bind the host telemetry stream directly to the active server gateway (`192.168.1.14`), ensuring zero handshake downtime.
+
+* **Agent System Recovery (XML Configuration Corruption File Reset):**
+  * **The Issue:** Manual editing of the protected system files without full folder permissions introduced structural formatting errors, causing the local background service (`WazuhSvc`) to fault and fall into a persistent `Stopped` crash loop.
+  * **The Resolution:** Executed a full structural factory-reset recovery deployment using an automated PowerShell script to purge the broken configuration array, replace it with a pristine XML configuration template, and force-start the engine back to a healthy `Running` state.
+
+* **Log Channel Auditing (FIM Cache Delays & Un-muting Advanced Event Channels):**
+  * **The Issue:** The SIEM suffered structural blindness during both the network credential testing and the registry malware injection phases. This was caused by Windows storing specialized authentication records in independent sub-folders (`OpenSSH/Operational`), and the agent's File Integrity Monitoring (`Syscheck`) engine running on a slow 12-hour schedule to save CPU cycles.
+  * **The Resolution:** Utilized the native Windows audit utility (`wevtutil sl OpenSSH/Operational /e:true`) to un-mute the hidden login logging rooms. Simultaneously injected custom `<syscheck>` real-time variables (`realtime="yes"`) directly into the agent's configuration core to completely bypass caching delays and stream registry anomalies in sub-second intervals.
+
