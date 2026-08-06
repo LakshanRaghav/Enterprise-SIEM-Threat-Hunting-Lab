@@ -1,0 +1,20 @@
+<!-- 
+  Wazuh Core Enterprise SMTP Alert & Notification Configuration 
+  Target Framework: NIST-CSF Incident Response & Automated Alerting Matrix
+  Objective: Configure server-side SMTP routing to suppress low-priority logs and immediately broadcast Level 12+ critical alerts via email.
+-->
+<ossec_config>
+  <global>
+    <email_notification>yes</email_notification>
+    <smtp_server>127.0.0.1</smtp_server>
+    <email_from>wazuh-alerts@securitylab.local</email_from>
+    <email_to>admin-alerts@enterprise.com</email_to>
+    <email_maxperhour>12</email_maxperhour>
+    <email_log_source>alerts.log</email_log_source>
+  </global>
+
+  <alerts>
+    <log_alert_level>3</log_alert_level>
+    <email_alert_level>12</email_alert_level>
+  </alerts>
+</ossec_config>
