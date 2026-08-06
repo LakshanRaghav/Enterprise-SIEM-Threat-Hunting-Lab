@@ -1,0 +1,86 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.08.06",
+  "_id": "yJ1-158BQ4JWm1sKJ1dm",
+  "_score": null,
+  "_source": {
+    "predecoder": {
+      "program_name": "WinEvtLog",
+      "timestamp": "2026 Aug 06 20:03:07"
+    },
+    "input": {
+      "type": "log"
+    },
+    "agent": {
+      "ip": "10.255.140.114",
+      "name": "DESKTOP-OTN0M3V",
+      "id": "003"
+    },
+    "manager": {
+      "name": "wazuh-server"
+    },
+    "data": {
+      "srcip": "127.0.0.1",
+      "extra_data": "Microsoft-Windows-Security-Auditing",
+      "dstuser": "(no user)",
+      "system_name": "DESKTOP-OTN0M3V",
+      "account_name": "FakeHackerUser",
+      "id": "4625",
+      "type": "Security",
+      "logon_type": "3",
+      "security_id": "S-1-0-0",
+      "status": "AUDIT_FAILURE"
+    },
+    "rule": {
+      "mail": false,
+      "level": 5,
+      "pci_dss": [
+        "10.2.4",
+        "10.2.5"
+      ],
+      "hipaa": [
+        "164.312.b"
+      ],
+      "tsc": [
+        "CC6.1",
+        "CC6.8",
+        "CC7.2",
+        "CC7.3"
+      ],
+      "description": "Windows: Logon Failure - Unknown user or bad password.",
+      "groups": [
+        "windows",
+        "authentication_failed"
+      ],
+      "nist_800_53": [
+        "AU.14",
+        "AC.7"
+      ],
+      "gdpr": [
+        "IV_35.7.d",
+        "IV_32.2"
+      ],
+      "firedtimes": 2,
+      "id": "18130",
+      "info": "https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=4625",
+      "gpg13": [
+        "7.1"
+      ]
+    },
+    "location": "WinEvtLog",
+    "decoder": {
+      "parent": "windows",
+      "name": "windows"
+    },
+    "id": "1786026788.304811",
+    "full_log": "2026 Aug 06 20:03:07 WinEvtLog: Security: AUDIT_FAILURE(4625): Microsoft-Windows-Security-Auditing: (no user): no domain: DESKTOP-OTN0M3V: An account failed to log on. Subject:  Security ID:  S-1-0-0  Account Name:  -  Account Domain:  -  Logon ID:  0x0  Logon Type:   3  Account For Which Logon Failed:  Security ID:  S-1-0-0  Account Name:  FakeHackerUser  Account Domain:  -  Failure Information:  Failure Reason:  %%2313  Status:   0xc000006d  Sub Status:  0xc0000064  Process Information:  Caller Process ID: 0x0  Caller Process Name: -  Network Information:  Workstation Name: DESKTOP-OTN0M3V  Source Network Address: 127.0.0.1  Source Port:  62059  Detailed Authentication Information:  Logon Process:  NtLmSsp   Authentication Package: NTLM  Transited Services: -  Package Name (NTLM only): -  Key Length:  0  This event is generated when a logon request fails. It is generated on the computer where access was attempted.",
+    "timestamp": "2026-08-06T14:33:08.852+0000"
+  },
+  "fields": {
+    "timestamp": [
+      "2026-08-06T14:33:08.852Z"
+    ]
+  },
+  "sort": [
+    1786026788852
+  ]
+}
