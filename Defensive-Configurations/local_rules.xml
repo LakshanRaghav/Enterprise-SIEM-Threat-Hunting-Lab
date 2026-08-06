@@ -1,0 +1,13 @@
+<!-- Primary Custom Rules Core Configuration -->
+<group name="local,windows,syscheck,">
+
+  <!-- Forceful Rule Overwrite to Escalate Inbound Logons -->
+  <rule id="18130" level="12" overwrite="yes">
+    <if_sid>18100</if_sid>
+    <description>Automated Brute-Force Attack Containment Triggered: High velocity logon failures detected on host.</description>
+    <mitre>
+      <id>T1110.001</id>
+    </mitre>
+  </rule>
+
+</group>
